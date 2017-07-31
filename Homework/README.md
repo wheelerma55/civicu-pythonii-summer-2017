@@ -11,7 +11,7 @@
 
 This past week we spent some time working with virtual environments. The term Virtual Environments refers to many
 types of technologies but our focus this week was on the Python based "virtualenv". The creation of python based virtual 
-environments allow you to install various packages needed to complete a specific job, helps manage package dependency,
+environments allow you to install various packages needed to complete a specific job, help manage package dependency,
 and reduces system conflicts. This weeks homework assignment will demonstrate how this works and help to increase 
 your fluency with virtual environment concepts.
 
