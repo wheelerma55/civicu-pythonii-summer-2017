@@ -9,7 +9,8 @@ The requests library needs to be installed and can be installed easily using pip
 The [Star Wars API](http://swapi.co/documentation) is what we will be using today during our group challenge to get familiar with making requests and parsing JSON. This API is ideal for this purpose because it doesn't require user authentication and will let us make up to 10,000 requests per day without being rate limited. Below you'll find the basic building blocks for making `GET` requests.
 
 #### Example `GET` request
-```Python
+
+```python
 import requests
 
 # making a simple `GET` request to get all the SWAPI film data
@@ -24,7 +25,9 @@ print(response.headers) # will print out any header information in the request
 ```
 
 #### Requests built in JSON decoder
+
 The requests library has a built in JSON decoder that lets us decode the JSON object sent in the body of a response. 
+
 ```Python
 response = requests.get("http://swapi.co/api/films/")
 
@@ -36,8 +39,10 @@ print(response_dict)
 ```
 
 #### Pretty printing JSON
+
 In the code snippet below there is a little helper function that we can call with any of our decoded JSON objects as an argument and it will print them out in a better format. Feel free to just use the `json.dumps(your_json_obj, indent=4)` pattern on its own as well.
-```Python
+
+```python
 import json
 
 
@@ -47,6 +52,7 @@ def pretty_print(json_obj):
 ```
 
 ### Other pieces of the Requests library
+
 The requests library lets you do a lot more than just make `GET` requests but for the SWAPI that is mainly how we will use it. To see more information on the different things you can do with requests, the links below will lead you to the documentation and a good tutorial.
 
 * [requests library docs](http://docs.python-requests.org/en/master/)
